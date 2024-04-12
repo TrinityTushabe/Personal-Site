@@ -339,6 +339,7 @@ span{
   background: var(--second-bg-color);
   transition: 0.3s ease;
   animation: slideIn 1s ease-in-out;
+  opacity: 0.9;
 }
 .skills:hover{
   transform: scale(1.1);
@@ -688,7 +689,7 @@ li {
 }
 .public-speaking-item{
   background: rgba(0, 0, 0, 0.7);
-  border: 3px solid rgba(238, 238, 238, 0.2);
+  border: 3px solid var(--main-color);
   border-radius: 2rem;
   margin: 0 2rem;
   padding: 30px 60px;
@@ -884,6 +885,7 @@ p {
   color: white;
 }
 
+
 .research-box{
   background-size: cover;
   display: flex;
@@ -899,7 +901,7 @@ p {
 }
 .research-item{
   background: rgba(0, 0, 0, 0.7);
-  border: 3px solid rgba(238, 238, 238, 0.2);
+  border: 3px solid var(--main-color);
   border-radius: 2rem;
   margin: 0 2rem;
   padding: 30px 60px;
@@ -1003,28 +1005,28 @@ p {
 }
 @media screen and (max-width: 600px) {
   .affiliations, .post {
-     padding: 10px; /* Reduce padding for smaller screens */
+     padding: 10px;
   }
  
   .post {
-     grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+     grid-template-columns: 1fr;
   }
  
   .post-content {
-     flex-direction: column; /* Stack content vertically */
+     flex-direction: column; 
   }
  
   iframe {
-     margin-right: 0; /* Remove margin to center the iframe */
-     margin-bottom: 20px; /* Add margin to the bottom */
+     margin-right: 0;
+     margin-bottom: 20px; 
   }
  
   h2 {
-     font-size: 16px; /* Reduce font size */
+     font-size: 16px;
   }
  
   p {
-     font-size: 14px; /* Reduce font size */
+     font-size: 14px;
   }
  }
  
