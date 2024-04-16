@@ -16,9 +16,9 @@
   box-sizing: border-box;
 }
 :root{
-  --bg-color:#000000;
-  --second-bg-color: #131313;
-  --text-color: white;
+  --bg-color:#1a2c32;
+  --second-bg-color: #2d464c;
+  --text-color: #ddeff0;
   --main-color:#946B2D;
 }
 html{
@@ -135,10 +135,8 @@ body{
   display: none;
 }
 section{
-  /* display: flex; */
 	justify-content: center;
 	align-items: center;
-  min-height: 100vh;
   padding: 5rem 12% 10rem;
 }
 .home{
@@ -146,6 +144,7 @@ section{
   align-items: center;
   justify-content: center;
   gap: 15rem;
+  margin-bottom: 90px;
 }
 .home-content{
   display: flex;
@@ -153,7 +152,7 @@ section{
   align-items: baseline;
   text-align: left;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 16rem;
 }
 span{
   color: var(--main-color);
@@ -167,7 +166,7 @@ span{
   font-size: 3.5rem;
 }
 .home-content h1{
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 700;
   margin-top: 1.5rem;
   line-height: 1;
@@ -178,7 +177,7 @@ span{
 .home-img img{
   position: relative;
   top: 3rem;
-  width: 32vw;
+  width: 25vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
@@ -190,8 +189,8 @@ span{
               0 0 100px var(--main-color);
 }
 .home-content p{
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 300;
   line-height: 1.8;
   max-width: 1000px;
 }
@@ -324,7 +323,7 @@ span{
   }
 }
 .heading{
-  font-size: 5rem;
+  font-size: 3.5rem;
   text-align: center;
   margin: 3rem 0;
 }
@@ -342,7 +341,7 @@ span{
   opacity: 0.9;
 }
 .skills:hover{
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 ul {
   list-style: none;
@@ -457,7 +456,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .contact {
@@ -991,15 +990,12 @@ p {
       font-size: 2.6rem;
   }
   .home-content h1{
-      font-size: 8rem;
-      margin-top: 3rem;
+      font-size: 5.2rem;
+      
   }
   .home-content p{
       max-width: 600px;
       margin: 0 auto;
-  }
-  .home-img img{
-      max-width: 600px;
   }
 
 }
@@ -1029,4 +1025,15 @@ p {
      font-size: 14px;
   }
  }
- 
+
+@media screen and (max-width: 768px) {
+  .home-img img {
+    width: 50vw; /* Adjust the width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-img img {
+    width: 75vw; /* Adjust the width for even smaller screens */
+  }
+}
